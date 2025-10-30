@@ -1,0 +1,1 @@
+export type SortType = "low-high" | "high-low" | "relavent";

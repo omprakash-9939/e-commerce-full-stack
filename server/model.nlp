@@ -1,0 +1,2136 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hi": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "ask.health",
+            "domain": "default"
+          },
+          "go,how,is,it": {
+            "intent": "ask.health",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "ask.health",
+            "domain": "default"
+          },
+          "%price%,cheaper,product,show,than": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%price%,find,item,under": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%price%,below,list,product": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%price%,abov,product,show": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%price%,item,over": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%price_range%,between,product": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "all,bestsel,product,show": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "are,best,seller,the,which": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "item,show,trend": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "15,ad,day,in,last,me,product,show": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "ad,give,me,product,today": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "ad,in,item,last,list,week": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "from,last,month,product,show,trend": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,me,product,show": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,%subcategory%,in,list": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "kid,me,show,topwear": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,%price%,%subcategory%,cheaper,me,show,than": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,%price%,%subcategory%,for,list,under": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,%date%,%price%,from,get,item,under": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "%category%,%price%,%subcategory%,abov,me,show": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "bestsel,onli": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "just,one,trend": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "filter,item,popular,to": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "%price%,under": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "%price%,abov": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "%subcategory%,onli": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "bestsel,onli,show": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "for,item,show,trend,women": {
+            "intent": "search.products.refine",
+            "domain": "default"
+          },
+          "product,show": {
+            "intent": "search.products.incomplete",
+            "domain": "default"
+          },
+          "all,show,user": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "%email%,email,find,user,with": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "%name%,for,get,info": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "all,custom,list": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "do,have,how,mani,user,we": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "%date%,from,user": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "5,day,in,last,me,new,regist,show,user,who": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "find,sign,today,up,user": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "all,from,last,list,user,week": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "com,email,find,john@exampl,user,with": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "aditi,for,get,info": {
+            "intent": "search.users",
+            "domain": "default"
+          },
+          "%price%,7,ad,day,in,is,last,men,shoe,show,under": {
+            "intent": "search.products",
+            "domain": "default"
+          },
+          "ad,in,is,last,month,show,top,trend,women": {
+            "intent": "search.products",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greet": "default",
+          "ask.health": "default",
+          "search.products": "default",
+          "search.products.refine": "default",
+          "search.products.incomplete": "default",
+          "search.users": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "ask.health"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's it going",
+            "intent": "ask.health"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "ask.health"
+          },
+          {
+            "domain": "default",
+            "utterance": "show products cheaper than %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "find items under %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "list products below %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show products above %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "items over %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "products between %price_range%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show all bestseller products",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "which are the best sellers",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show trending items",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me products added in last 15 days",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "Give me products added today",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "List items added in last week",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show trending products from last month",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me %category% products",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "list %subCategory% in %category%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me kids topwear",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me %category% %subCategory% cheaper than %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "list %subCategory% under %price% for %category%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "get %category% items from %date% under %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "show me %category% %subCategory% above %price%",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "only bestsellers",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "just trending ones",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "filter to popular items",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "under %price%",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "above %price%",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "only %subCategory%",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show only bestsellers",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show trending items for women",
+            "intent": "search.products.refine"
+          },
+          {
+            "domain": "default",
+            "utterance": "show products",
+            "intent": "search.products.incomplete"
+          },
+          {
+            "domain": "default",
+            "utterance": "show all users",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "find user with email %email%",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "get info for %name%",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "list all customers",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "how many users do we have",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "users from %date%",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me new users who registered in last 5 days",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "Find users signed up today",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "List all users from last week",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "Find user with email john@example.com",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "Get info for Aditi",
+            "intent": "search.users"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show men's shoes under %price% added in last 7 days",
+            "intent": "search.products"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show trending women's tops added in last month",
+            "intent": "search.products"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "5": 1,
+              "7": 1,
+              "15": 1,
+              "hi": 1,
+              "hello": 1,
+              "hey": 1,
+              "good": 1,
+              "morn": 1,
+              "how": 1,
+              "are": 1,
+              "you": 1,
+              "is": 1,
+              "it": 1,
+              "go": 1,
+              "what": 1,
+              "up": 1,
+              "show": 1,
+              "product": 1,
+              "cheaper": 1,
+              "than": 1,
+              "%price%": 1,
+              "find": 1,
+              "item": 1,
+              "under": 1,
+              "list": 1,
+              "below": 1,
+              "abov": 1,
+              "over": 1,
+              "between": 1,
+              "%price_range%": 1,
+              "all": 1,
+              "bestsel": 1,
+              "which": 1,
+              "the": 1,
+              "best": 1,
+              "seller": 1,
+              "trend": 1,
+              "me": 1,
+              "ad": 1,
+              "in": 1,
+              "last": 1,
+              "day": 1,
+              "give": 1,
+              "today": 1,
+              "week": 1,
+              "from": 1,
+              "month": 1,
+              "%category%": 1,
+              "%subcategory%": 1,
+              "kid": 1,
+              "topwear": 1,
+              "for": 1,
+              "get": 1,
+              "%date%": 1,
+              "onli": 1,
+              "just": 1,
+              "one": 1,
+              "filter": 1,
+              "to": 1,
+              "popular": 1,
+              "women": 1,
+              "user": 1,
+              "with": 1,
+              "email": 1,
+              "%email%": 1,
+              "info": 1,
+              "%name%": 1,
+              "custom": 1,
+              "mani": 1,
+              "do": 1,
+              "we": 1,
+              "have": 1,
+              "new": 1,
+              "who": 1,
+              "regist": 1,
+              "sign": 1,
+              "john@exampl": 1,
+              "com": 1,
+              "aditi": 1,
+              "men": 1,
+              "shoe": 1,
+              "top": 1
+            },
+            "intents": {
+              "greet": 1,
+              "ask.health": 1,
+              "search.products": 1,
+              "search.products.refine": 1,
+              "search.products.incomplete": 1,
+              "search.users": 1
+            },
+            "intentFeatures": {
+              "greet": {
+                "hi": 1,
+                "hello": 1,
+                "hey": 1,
+                "good": 1,
+                "morn": 1
+              },
+              "ask.health": {
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "is": 1,
+                "it": 1,
+                "go": 1,
+                "what": 1,
+                "up": 1
+              },
+              "search.products": {
+                "7": 1,
+                "15": 1,
+                "show": 1,
+                "product": 1,
+                "cheaper": 1,
+                "than": 1,
+                "%price%": 1,
+                "find": 1,
+                "item": 1,
+                "under": 1,
+                "list": 1,
+                "below": 1,
+                "abov": 1,
+                "over": 1,
+                "between": 1,
+                "%price_range%": 1,
+                "all": 1,
+                "bestsel": 1,
+                "which": 1,
+                "are": 1,
+                "the": 1,
+                "best": 1,
+                "seller": 1,
+                "trend": 1,
+                "me": 1,
+                "ad": 1,
+                "in": 1,
+                "last": 1,
+                "day": 1,
+                "give": 1,
+                "today": 1,
+                "week": 1,
+                "from": 1,
+                "month": 1,
+                "%category%": 1,
+                "%subcategory%": 1,
+                "kid": 1,
+                "topwear": 1,
+                "for": 1,
+                "get": 1,
+                "%date%": 1,
+                "men": 1,
+                "is": 1,
+                "shoe": 1,
+                "women": 1,
+                "top": 1
+              },
+              "search.products.refine": {
+                "onli": 1,
+                "bestsel": 1,
+                "just": 1,
+                "trend": 1,
+                "one": 1,
+                "filter": 1,
+                "to": 1,
+                "popular": 1,
+                "item": 1,
+                "under": 1,
+                "%price%": 1,
+                "abov": 1,
+                "%subcategory%": 1,
+                "show": 1,
+                "for": 1,
+                "women": 1
+              },
+              "search.products.incomplete": {
+                "show": 1,
+                "product": 1
+              },
+              "search.users": {
+                "5": 1,
+                "show": 1,
+                "all": 1,
+                "user": 1,
+                "find": 1,
+                "with": 1,
+                "email": 1,
+                "%email%": 1,
+                "get": 1,
+                "info": 1,
+                "for": 1,
+                "%name%": 1,
+                "list": 1,
+                "custom": 1,
+                "how": 1,
+                "mani": 1,
+                "do": 1,
+                "we": 1,
+                "have": 1,
+                "from": 1,
+                "%date%": 1,
+                "me": 1,
+                "new": 1,
+                "who": 1,
+                "regist": 1,
+                "in": 1,
+                "last": 1,
+                "day": 1,
+                "sign": 1,
+                "up": 1,
+                "today": 1,
+                "week": 1,
+                "john@exampl": 1,
+                "com": 1,
+                "aditi": 1
+              }
+            },
+            "featuresToIntent": {
+              "5": [
+                "search.users"
+              ],
+              "7": [
+                "search.products"
+              ],
+              "15": [
+                "search.products"
+              ],
+              "hi": [
+                "greet"
+              ],
+              "hello": [
+                "greet"
+              ],
+              "hey": [
+                "greet"
+              ],
+              "good": [
+                "greet"
+              ],
+              "morn": [
+                "greet"
+              ],
+              "how": [
+                "ask.health",
+                "search.users"
+              ],
+              "are": [
+                "ask.health",
+                "search.products"
+              ],
+              "you": [
+                "ask.health"
+              ],
+              "is": [
+                "ask.health",
+                "search.products"
+              ],
+              "it": [
+                "ask.health"
+              ],
+              "go": [
+                "ask.health"
+              ],
+              "what": [
+                "ask.health"
+              ],
+              "up": [
+                "ask.health",
+                "search.users"
+              ],
+              "show": [
+                "search.products",
+                "search.products.refine",
+                "search.products.incomplete",
+                "search.users"
+              ],
+              "product": [
+                "search.products",
+                "search.products.incomplete"
+              ],
+              "cheaper": [
+                "search.products"
+              ],
+              "than": [
+                "search.products"
+              ],
+              "%price%": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "find": [
+                "search.products",
+                "search.users"
+              ],
+              "item": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "under": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "list": [
+                "search.products",
+                "search.users"
+              ],
+              "below": [
+                "search.products"
+              ],
+              "abov": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "over": [
+                "search.products"
+              ],
+              "between": [
+                "search.products"
+              ],
+              "%price_range%": [
+                "search.products"
+              ],
+              "all": [
+                "search.products",
+                "search.users"
+              ],
+              "bestsel": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "which": [
+                "search.products"
+              ],
+              "the": [
+                "search.products"
+              ],
+              "best": [
+                "search.products"
+              ],
+              "seller": [
+                "search.products"
+              ],
+              "trend": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "me": [
+                "search.products",
+                "search.users"
+              ],
+              "ad": [
+                "search.products"
+              ],
+              "in": [
+                "search.products",
+                "search.users"
+              ],
+              "last": [
+                "search.products",
+                "search.users"
+              ],
+              "day": [
+                "search.products",
+                "search.users"
+              ],
+              "give": [
+                "search.products"
+              ],
+              "today": [
+                "search.products",
+                "search.users"
+              ],
+              "week": [
+                "search.products",
+                "search.users"
+              ],
+              "from": [
+                "search.products",
+                "search.users"
+              ],
+              "month": [
+                "search.products"
+              ],
+              "%category%": [
+                "search.products"
+              ],
+              "%subcategory%": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "kid": [
+                "search.products"
+              ],
+              "topwear": [
+                "search.products"
+              ],
+              "for": [
+                "search.products",
+                "search.products.refine",
+                "search.users"
+              ],
+              "get": [
+                "search.products",
+                "search.users"
+              ],
+              "%date%": [
+                "search.products",
+                "search.users"
+              ],
+              "men": [
+                "search.products"
+              ],
+              "shoe": [
+                "search.products"
+              ],
+              "women": [
+                "search.products",
+                "search.products.refine"
+              ],
+              "top": [
+                "search.products"
+              ],
+              "onli": [
+                "search.products.refine"
+              ],
+              "just": [
+                "search.products.refine"
+              ],
+              "one": [
+                "search.products.refine"
+              ],
+              "filter": [
+                "search.products.refine"
+              ],
+              "to": [
+                "search.products.refine"
+              ],
+              "popular": [
+                "search.products.refine"
+              ],
+              "user": [
+                "search.users"
+              ],
+              "with": [
+                "search.users"
+              ],
+              "email": [
+                "search.users"
+              ],
+              "%email%": [
+                "search.users"
+              ],
+              "info": [
+                "search.users"
+              ],
+              "%name%": [
+                "search.users"
+              ],
+              "custom": [
+                "search.users"
+              ],
+              "mani": [
+                "search.users"
+              ],
+              "do": [
+                "search.users"
+              ],
+              "we": [
+                "search.users"
+              ],
+              "have": [
+                "search.users"
+              ],
+              "new": [
+                "search.users"
+              ],
+              "who": [
+                "search.users"
+              ],
+              "regist": [
+                "search.users"
+              ],
+              "sign": [
+                "search.users"
+              ],
+              "john@exampl": [
+                "search.users"
+              ],
+              "com": [
+                "search.users"
+              ],
+              "aditi": [
+                "search.users"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hi",
+                "hello",
+                "hey",
+                "good",
+                "morn",
+                "how",
+                "are",
+                "you",
+                "is",
+                "it",
+                "go",
+                "what",
+                "up",
+                "show",
+                "product",
+                "cheaper",
+                "than",
+                "%price%",
+                "find",
+                "item",
+                "under",
+                "list",
+                "below",
+                "abov",
+                "over",
+                "between",
+                "%price_range%",
+                "all",
+                "bestsel",
+                "which",
+                "the",
+                "best",
+                "seller",
+                "trend",
+                "15",
+                "me",
+                "ad",
+                "in",
+                "last",
+                "day",
+                "give",
+                "today",
+                "week",
+                "from",
+                "month",
+                "%category%",
+                "%subcategory%",
+                "kid",
+                "topwear",
+                "for",
+                "get",
+                "%date%",
+                "onli",
+                "just",
+                "one",
+                "filter",
+                "to",
+                "popular",
+                "women",
+                "user",
+                "with",
+                "email",
+                "%email%",
+                "info",
+                "%name%",
+                "custom",
+                "mani",
+                "do",
+                "we",
+                "have",
+                "5",
+                "new",
+                "who",
+                "regist",
+                "sign",
+                "john@exampl",
+                "com",
+                "aditi",
+                "7",
+                "men",
+                "shoe",
+                "top"
+              ],
+              "intents": [
+                "greet",
+                "ask.health",
+                "search.products",
+                "search.products.refine",
+                "search.products.incomplete",
+                "search.users"
+              ],
+              "perceptrons": [
+                [
+                  9.259865760803223,
+                  9.259867668151855,
+                  9.259857177734375,
+                  4.629931449890137,
+                  4.629931449890137,
+                  -1.9360687732696533,
+                  -1.9316648244857788,
+                  -1.1581192016601562,
+                  -2.0499398708343506,
+                  -0.577844500541687,
+                  -0.577844500541687,
+                  -1.4555212259292603,
+                  -1.5203917026519775,
+                  -2.2917585372924805,
+                  -2.73409366607666,
+                  -0.1276760995388031,
+                  -0.1276760995388031,
+                  -3.610964775085449,
+                  -0.9691739678382874,
+                  -2.0752432346343994,
+                  -1.4174264669418335,
+                  -2.205826997756958,
+                  -0.1481906920671463,
+                  -1.4148880243301392,
+                  -0.3722548186779022,
+                  -1.1666463613510132,
+                  -1.1666463613510132,
+                  -1.553966999053955,
+                  -1.92571222782135,
+                  -0.7735470533370972,
+                  -0.7735470533370972,
+                  -0.7735470533370972,
+                  -0.7735470533370972,
+                  -1.8628313541412354,
+                  -0.03387155011296272,
+                  -1.1966966390609741,
+                  -0.5294005870819092,
+                  -0.7560433745384216,
+                  -0.19921620190143585,
+                  -0.03387155011296272,
+                  -0.3253936469554901,
+                  -0.39248907566070557,
+                  -0.13290748000144958,
+                  -1.3412202596664429,
+                  -0.008882058784365654,
+                  -0.5958632826805115,
+                  -1.9220083951950073,
+                  -0.7903473377227783,
+                  -0.7903473377227783,
+                  -1.4552457332611084,
+                  -1.4388866424560547,
+                  -1.3289765119552612,
+                  -3.103844404220581,
+                  -1.5815107822418213,
+                  -1.5815107822418213,
+                  -0.9835366606712341,
+                  -0.9835366606712341,
+                  -0.9835366606712341,
+                  0,
+                  -2.355656147003174,
+                  -0.6417158842086792,
+                  -0.6417158842086792,
+                  -0.4323268532752991,
+                  -1.4338186979293823,
+                  -0.7354274988174438,
+                  -1.2660588026046753,
+                  -0.18353208899497986,
+                  -0.18353208899497986,
+                  -0.18353208899497986,
+                  -0.18353208899497986,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.056914132088422775,
+                  -0.20879562199115753,
+                  -0.20879562199115753,
+                  -0.6979017853736877,
+                  0,
+                  0,
+                  0,
+                  0,
+                  5.025850991362767
+                ],
+                [
+                  -0.7061172723770142,
+                  -0.7051762938499451,
+                  -0.7050728797912598,
+                  -0.3776071071624756,
+                  -0.3776071071624756,
+                  5.188775539398193,
+                  3.651371955871582,
+                  4.740493297576904,
+                  5.297220230102539,
+                  1.5473227500915527,
+                  1.5473227500915527,
+                  4.50063419342041,
+                  3.7827861309051514,
+                  -1.2591195106506348,
+                  -0.6964536905288696,
+                  -0.07997462153434753,
+                  -0.07997462153434753,
+                  -0.9550169706344604,
+                  -0.9517814517021179,
+                  -0.5678207278251648,
+                  -0.4367431700229645,
+                  -0.4948083758354187,
+                  -0.07346218079328537,
+                  -0.13445113599300385,
+                  -0.10241346061229706,
+                  -0.22054776549339294,
+                  -0.22054776549339294,
+                  -0.29477307200431824,
+                  -0.3910527229309082,
+                  -1.0891226530075073,
+                  -1.0891226530075073,
+                  -1.0891226530075073,
+                  -1.0891226530075073,
+                  -0.7914066910743713,
+                  -0.015014096163213253,
+                  -0.18777599930763245,
+                  -0.8916985988616943,
+                  -0.9450528025627136,
+                  -0.8224340677261353,
+                  -0.24537576735019684,
+                  -0.0487775094807148,
+                  -0.7953341007232666,
+                  -0.03738950192928314,
+                  -0.0697673037648201,
+                  -0.47527429461479187,
+                  -0.13042497634887695,
+                  -0.3815903067588806,
+                  -0.07754997164011002,
+                  -0.07754997164011002,
+                  -0.30636414885520935,
+                  -0.2939440906047821,
+                  -0.06178794801235199,
+                  -0.5710427761077881,
+                  -0.20643699169158936,
+                  -0.20643699169158936,
+                  -0.16458246111869812,
+                  -0.16458246111869812,
+                  -0.16458246111869812,
+                  -0.46706971526145935,
+                  -2.0229525566101074,
+                  -0.08300730586051941,
+                  -0.08300730586051941,
+                  -0.07649898529052734,
+                  -0.2902466356754303,
+                  -0.18189801275730133,
+                  -0.1887807548046112,
+                  -1.0160140991210938,
+                  -1.0160140991210938,
+                  -1.0160140991210938,
+                  -1.0160140991210938,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.717850387096405,
+                  -0.0020692271646112204,
+                  -0.0020692271646112204,
+                  -0.08334902673959732,
+                  -0.21628595888614655,
+                  -0.21628595888614655,
+                  -0.21628595888614655,
+                  -0.46706971526145935,
+                  0.7050732890358693
+                ],
+                [
+                  -0.3677619993686676,
+                  -0.35501915216445923,
+                  -0.34270617365837097,
+                  -0.2681468725204468,
+                  -0.2681468725204468,
+                  -1.3099762201309204,
+                  4.443151950836182,
+                  -0.807979166507721,
+                  4.0653076171875,
+                  -0.35077863931655884,
+                  -0.35077863931655884,
+                  -0.698929488658905,
+                  -0.8764856457710266,
+                  1.631674885749817,
+                  11.1044921875,
+                  1.9560132026672363,
+                  1.9560132026672363,
+                  8.54165267944336,
+                  4.656019687652588,
+                  11.55366325378418,
+                  0.8554638028144836,
+                  9.240248680114746,
+                  -3.167558431625366,
+                  3.4989802837371826,
+                  5.419821262359619,
+                  7.210136413574219,
+                  7.210136413574219,
+                  5.364809989929199,
+                  7.3628764152526855,
+                  5.275825500488281,
+                  5.275825500488281,
+                  5.275825500488281,
+                  5.275825500488281,
+                  12.173748016357422,
+                  0.38530081510543823,
+                  2.599824905395508,
+                  4.623945713043213,
+                  7.040029048919678,
+                  -1.409083366394043,
+                  -0.4858894944190979,
+                  3.669196605682373,
+                  3.505659341812134,
+                  -5.406736850738525,
+                  -2.557530403137207,
+                  4.487031936645508,
+                  9.860343933105469,
+                  -0.784109354019165,
+                  10.561206817626953,
+                  10.561206817626953,
+                  -2.2335445880889893,
+                  -1.3898122310638428,
+                  -1.3093820810317993,
+                  -4.279371738433838,
+                  -1.3217344284057617,
+                  -1.3217344284057617,
+                  -2.1624302864074707,
+                  -2.1624302864074707,
+                  -2.1624302864074707,
+                  -11.891473770141602,
+                  -3.1734261512756348,
+                  -0.21473900973796844,
+                  -0.21473900973796844,
+                  -0.16922767460346222,
+                  -0.13425502181053162,
+                  -0.0748361274600029,
+                  -4.146337032318115,
+                  -0.05828430503606796,
+                  -0.05828430503606796,
+                  -0.05828430503606796,
+                  -0.05828430503606796,
+                  -0.9776119589805603,
+                  -0.9776119589805603,
+                  -0.9776119589805603,
+                  -0.9776119589805603,
+                  -0.15917474031448364,
+                  -0.012439428828656673,
+                  -0.012439428828656673,
+                  -0.022000834345817566,
+                  0.24252356588840485,
+                  0.24252356588840485,
+                  0.24252356588840485,
+                  4.9200639724731445,
+                  -11.361589417257244
+                ],
+                [
+                  -3.250885009765625,
+                  -3.2498908042907715,
+                  -3.248899459838867,
+                  -1.6273250579833984,
+                  -1.6273250579833984,
+                  -1.2530826330184937,
+                  -1.2498420476913452,
+                  -0.7543709874153137,
+                  -3.370222568511963,
+                  -0.16734418272972107,
+                  -0.16734418272972107,
+                  -0.4051770567893982,
+                  -0.560615599155426,
+                  -0.5593470335006714,
+                  -13.493736267089844,
+                  -0.5822499990463257,
+                  -0.5822499990463257,
+                  5.701052665710449,
+                  -9.313620567321777,
+                  -5.8502936363220215,
+                  5.499154567718506,
+                  -8.121986389160156,
+                  -0.24812689423561096,
+                  5.338994026184082,
+                  -4.193698406219482,
+                  -0.014308437705039978,
+                  -0.014308437705039978,
+                  -1.5304681062698364,
+                  0.44002413749694824,
+                  -0.4954407513141632,
+                  -0.4954407513141632,
+                  -0.4954407513141632,
+                  -0.4954407513141632,
+                  3.3622782230377197,
+                  0,
+                  -3.209048271179199,
+                  -2.76076078414917,
+                  -3.0311765670776367,
+                  -3.046966314315796,
+                  -0.5609952211380005,
+                  0,
+                  -0.10617366433143616,
+                  -0.02213289588689804,
+                  -0.6985724568367004,
+                  -2.2557950019836426,
+                  -10.409821510314941,
+                  0.08764273673295975,
+                  -0.011409878730773926,
+                  -0.011409878730773926,
+                  3.41015362739563,
+                  -2.772562026977539,
+                  -0.6542636752128601,
+                  11.056624412536621,
+                  3.9058878421783447,
+                  3.9058878421783447,
+                  5.676716327667236,
+                  5.676716327667236,
+                  5.676716327667236,
+                  10.811256408691406,
+                  -2.066249370574951,
+                  -0.3025319576263428,
+                  -0.3025319576263428,
+                  -0.23108749091625214,
+                  -2.4990360736846924,
+                  -1.2494652271270752,
+                  -0.5242512226104736,
+                  -0.2497432380914688,
+                  -0.2497432380914688,
+                  -0.2497432380914688,
+                  -0.2497432380914688,
+                  -0.12096989154815674,
+                  -0.12096989154815674,
+                  -0.12096989154815674,
+                  -0.12096989154815674,
+                  -0.10617366433143616,
+                  -0.026408717036247253,
+                  -0.026408717036247253,
+                  -1.2495497465133667,
+                  -0.3492979109287262,
+                  -0.3492979109287262,
+                  -0.3492979109287262,
+                  -2.2557950019836426,
+                  3.1110813715025443
+                ],
+                [
+                  -0.4602504372596741,
+                  -0.46024224162101746,
+                  -0.4602338373661041,
+                  -0.23016157746315002,
+                  -0.23016157746315002,
+                  -0.15938135981559753,
+                  -0.18488995730876923,
+                  -0.11608688533306122,
+                  -0.28509071469306946,
+                  -0.009385230951011181,
+                  -0.009385230951011181,
+                  -0.08137552440166473,
+                  -0.09387702494859695,
+                  7.0617852210998535,
+                  6.751098155975342,
+                  -2.7901597023010254,
+                  -2.7901597023010254,
+                  -8.692028999328613,
+                  -0.04797947406768799,
+                  -2.3599843978881836,
+                  -0.050282444804906845,
+                  -0.2438461184501648,
+                  -0.20264162123203278,
+                  -5.579202651977539,
+                  0,
+                  -3.605109453201294,
+                  -3.605109453201294,
+                  -7.180709362030029,
+                  -7.0899200439453125,
+                  -0.06880097091197968,
+                  -0.06880097091197968,
+                  -0.06880097091197968,
+                  -0.06880097091197968,
+                  -5.16103982925415,
+                  -0.5831687450408936,
+                  -7.5786566734313965,
+                  -0.8883044123649597,
+                  -0.8709065318107605,
+                  -3.576421022415161,
+                  -0.7754039168357849,
+                  -0.10917077213525772,
+                  -0.12165113538503647,
+                  0,
+                  -2.7333297729492188,
+                  -2.800985336303711,
+                  -6.69110631942749,
+                  -0.02050556056201458,
+                  -0.09586887061595917,
+                  -0.09586887061595917,
+                  -0.13154076039791107,
+                  -0.13154076039791107,
+                  -0.014414873905479908,
+                  -0.43929314613342285,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06807724386453629,
+                  -0.6804311275482178,
+                  -0.03345455601811409,
+                  -0.03345455601811409,
+                  -0.02137959748506546,
+                  -0.13154076039791107,
+                  -0.0657726302742958,
+                  -0.030155068263411522,
+                  -0.016679830849170685,
+                  -0.016679830849170685,
+                  -0.016679830849170685,
+                  -0.016679830849170685,
+                  -0.04921984672546387,
+                  -0.04921984672546387,
+                  -0.04921984672546387,
+                  -0.04921984672546387,
+                  -0.00647660531103611,
+                  -0.0018979378510266542,
+                  -0.0018979378510266542,
+                  -0.0657673180103302,
+                  -0.050282444804906845,
+                  -0.050282444804906845,
+                  -0.050282444804906845,
+                  -0.06807724386453629,
+                  0.4604004644225366
+                ],
+                [
+                  -1.486175537109375,
+                  -1.4861621856689453,
+                  -1.4861618280410767,
+                  -0.7628742456436157,
+                  -0.7628742456436157,
+                  -0.13674823939800262,
+                  -1.0155788660049438,
+                  -0.7084015011787415,
+                  -1.7515112161636353,
+                  -0.3392443060874939,
+                  -0.3392443060874939,
+                  -0.409113347530365,
+                  0.5898594856262207,
+                  -0.6545866131782532,
+                  -3.2245633602142334,
+                  -0.11069107800722122,
+                  -0.11069107800722122,
+                  -2.7166175842285156,
+                  1.5197688341140747,
+                  -2.129791498184204,
+                  -2.043017625808716,
+                  2.31545090675354,
+                  -0.19680112600326538,
+                  -0.04263164848089218,
+                  -0.04176677390933037,
+                  -0.15771213173866272,
+                  -0.15771213173866272,
+                  4.624831676483154,
+                  -2.2444827556610107,
+                  -0.23733171820640564,
+                  -0.23733171820640564,
+                  -0.23733171820640564,
+                  -0.23733171820640564,
+                  -1.2460187673568726,
+                  -0.059498365968465805,
+                  0.4718572199344635,
+                  -1.4168802499771118,
+                  -0.6191970109939575,
+                  -1.838555932044983,
+                  0.8133069276809692,
+                  -0.0925716832280159,
+                  0.8598641753196716,
+                  -2.1408872604370117,
+                  1.0094062089920044,
+                  -0.4197268486022949,
+                  -1.9214298725128174,
+                  -1.288450837135315,
+                  -0.6542844176292419,
+                  -0.6542844176292419,
+                  3.3054959774017334,
+                  3.354452610015869,
+                  2.960836172103882,
+                  -0.43405020236968994,
+                  -0.19575054943561554,
+                  -0.19575054943561554,
+                  -0.06007811427116394,
+                  -0.06007811427116394,
+                  -0.06007811427116394,
+                  -0.8047742247581482,
+                  8.829307556152344,
+                  0.9189283847808838,
+                  0.9189283847808838,
+                  0.612619161605835,
+                  4.093069553375244,
+                  2.0465352535247803,
+                  5.859267234802246,
+                  1.0267481803894043,
+                  1.0267481803894043,
+                  1.0267481803894043,
+                  1.0267481803894043,
+                  1.449354887008667,
+                  1.449354887008667,
+                  1.449354887008667,
+                  1.449354887008667,
+                  1.0007519721984863,
+                  0.30630937218666077,
+                  0.30630937218666077,
+                  2.04653263092041,
+                  -0.258526086807251,
+                  -0.258526086807251,
+                  -0.258526086807251,
+                  -0.20239759981632233,
+                  1.4861624035559955
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "how's it going"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "show products cheaper than %price%"
+      ],
+      [
+        "en",
+        "find items under %price%"
+      ],
+      [
+        "en",
+        "list products below %price%"
+      ],
+      [
+        "en",
+        "show products above %price%"
+      ],
+      [
+        "en",
+        "items over %price%"
+      ],
+      [
+        "en",
+        "products between %price_range%"
+      ],
+      [
+        "en",
+        "show all bestseller products"
+      ],
+      [
+        "en",
+        "which are the best sellers"
+      ],
+      [
+        "en",
+        "show trending items"
+      ],
+      [
+        "en",
+        "Show me products added in last 15 days"
+      ],
+      [
+        "en",
+        "Give me products added today"
+      ],
+      [
+        "en",
+        "List items added in last week"
+      ],
+      [
+        "en",
+        "Show trending products from last month"
+      ],
+      [
+        "en",
+        "show me %category% products"
+      ],
+      [
+        "en",
+        "list %subCategory% in %category%"
+      ],
+      [
+        "en",
+        "show me kids topwear"
+      ],
+      [
+        "en",
+        "show me %category% %subCategory% cheaper than %price%"
+      ],
+      [
+        "en",
+        "list %subCategory% under %price% for %category%"
+      ],
+      [
+        "en",
+        "get %category% items from %date% under %price%"
+      ],
+      [
+        "en",
+        "show me %category% %subCategory% above %price%"
+      ],
+      [
+        "en",
+        "only bestsellers"
+      ],
+      [
+        "en",
+        "just trending ones"
+      ],
+      [
+        "en",
+        "filter to popular items"
+      ],
+      [
+        "en",
+        "under %price%"
+      ],
+      [
+        "en",
+        "above %price%"
+      ],
+      [
+        "en",
+        "only %subCategory%"
+      ],
+      [
+        "en",
+        "Show only bestsellers"
+      ],
+      [
+        "en",
+        "Show trending items for women"
+      ],
+      [
+        "en",
+        "show products"
+      ],
+      [
+        "en",
+        "show all users"
+      ],
+      [
+        "en",
+        "find user with email %email%"
+      ],
+      [
+        "en",
+        "get info for %name%"
+      ],
+      [
+        "en",
+        "list all customers"
+      ],
+      [
+        "en",
+        "how many users do we have"
+      ],
+      [
+        "en",
+        "users from %date%"
+      ],
+      [
+        "en",
+        "Show me new users who registered in last 5 days"
+      ],
+      [
+        "en",
+        "Find users signed up today"
+      ],
+      [
+        "en",
+        "List all users from last week"
+      ],
+      [
+        "en",
+        "Find user with email john@example.com"
+      ],
+      [
+        "en",
+        "Get info for Aditi"
+      ],
+      [
+        "en",
+        "Show men's shoes under %price% added in last 7 days"
+      ],
+      [
+        "en",
+        "Show trending women's tops added in last month"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {
+      "en": {
+        "price": {
+          "name": "price",
+          "type": "regex",
+          "rules": [
+            "/\\b\\d+\\b/g"
+          ]
+        },
+        "price_comparison": {
+          "name": "price_comparison",
+          "type": "regex",
+          "rules": [
+            "/\\b(above|over|greater than|below|under|less than)\\s+(\\d+)\\b/gi"
+          ]
+        },
+        "price_range": {
+          "name": "price_range",
+          "type": "regex",
+          "rules": [
+            "/\\bbetween\\s+(\\d+)\\s+(and|to)\\s+(\\d+)\\b/gi"
+          ]
+        },
+        "category": {
+          "name": "category",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "Women",
+              "texts": [
+                "women",
+                "ladies",
+                "girls"
+              ]
+            },
+            {
+              "option": "Men",
+              "texts": [
+                "men",
+                "gents",
+                "boys"
+              ]
+            },
+            {
+              "option": "Kids",
+              "texts": [
+                "kids",
+                "children"
+              ]
+            }
+          ]
+        },
+        "subCategory": {
+          "name": "subCategory",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "Topwear",
+              "texts": [
+                "tops",
+                "shirts",
+                "tshirts",
+                "tees",
+                "round neck",
+                "topwear"
+              ]
+            },
+            {
+              "option": "Shoes",
+              "texts": [
+                "shoe",
+                "shoes",
+                "sneakers",
+                "footwear"
+              ]
+            }
+          ]
+        },
+        "date": {
+          "name": "date",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "today",
+              "texts": [
+                "today",
+                "now"
+              ]
+            },
+            {
+              "option": "yesterday",
+              "texts": [
+                "yesterday"
+              ]
+            },
+            {
+              "option": "last_week",
+              "texts": [
+                "last week",
+                "previous week"
+              ]
+            },
+            {
+              "option": "last_month",
+              "texts": [
+                "last month",
+                "previous month"
+              ]
+            }
+          ]
+        },
+        "email": {
+          "name": "email",
+          "type": "regex",
+          "rules": [
+            "/\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b/gi"
+          ]
+        },
+        "name": {
+          "name": "name",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "John",
+              "texts": [
+                "John",
+                "Johnny"
+              ]
+            },
+            {
+              "option": "Aditi",
+              "texts": [
+                "Aditi",
+                "Adi"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greet": [
+          {
+            "answer": "Hello, How can I help you today?"
+          }
+        ],
+        "ask.health": [
+          {
+            "answer": "I'm doing great, thanks for asking! How about you?"
+          }
+        ],
+        "search.products.incomplete": [
+          {
+            "answer": "Do you want a category, price filter, or all products?"
+          }
+        ],
+        "None": [
+          {
+            "answer": "Sorry, I didn’t understand. Did you mean products or users?"
+          }
+        ],
+        "search.products": [
+          {
+            "answer": "Here are the products matching your request."
+          },
+          {
+            "answer": "These products were added as per your query."
+          },
+          {
+            "answer": "Here’s what I found for your product search."
+          },
+          {
+            "answer": "These trending products match your criteria."
+          },
+          {
+            "answer": "Showing products based on your price filter."
+          },
+          {
+            "answer": "Here are items above the price you requested."
+          },
+          {
+            "answer": "These products fall within the price range you specified."
+          },
+          {
+            "answer": "Here are affordable tops under your specified price."
+          },
+          {
+            "answer": "Showing products from the category you requested."
+          },
+          {
+            "answer": "Here are the items in that subcategory and price range."
+          },
+          {
+            "answer": "These are the kids' footwear products under your filter."
+          },
+          {
+            "answer": "Here are the products matching all your filters."
+          },
+          {
+            "answer": "These items fit your price, category, and date criteria."
+          }
+        ],
+        "search.products.refine": [
+          {
+            "answer": "Here are the bestselling products as requested."
+          },
+          {
+            "answer": "These trending items match your filter."
+          }
+        ],
+        "search.users": [
+          {
+            "answer": "Here are the new users registered recently."
+          },
+          {
+            "answer": "These users signed up today."
+          },
+          {
+            "answer": "Showing users registered within the last week."
+          },
+          {
+            "answer": "Here is the user information you requested."
+          },
+          {
+            "answer": "User details found based on your query."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {
+    "search.products": {
+      "price": {
+        "intent": "search.products",
+        "entity": "price",
+        "mandatory": false,
+        "locales": {}
+      },
+      "price_range": {
+        "intent": "search.products",
+        "entity": "price_range",
+        "mandatory": false,
+        "locales": {}
+      },
+      "category": {
+        "intent": "search.products",
+        "entity": "category",
+        "mandatory": false,
+        "locales": {}
+      },
+      "subCategory": {
+        "intent": "search.products",
+        "entity": "subCategory",
+        "mandatory": false,
+        "locales": {}
+      },
+      "date": {
+        "intent": "search.products",
+        "entity": "date",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "search.products.refine": {
+      "price": {
+        "intent": "search.products.refine",
+        "entity": "price",
+        "mandatory": false,
+        "locales": {}
+      },
+      "subCategory": {
+        "intent": "search.products.refine",
+        "entity": "subCategory",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "search.users": {
+      "email": {
+        "intent": "search.users",
+        "entity": "email",
+        "mandatory": false,
+        "locales": {}
+      },
+      "name": {
+        "intent": "search.users",
+        "entity": "name",
+        "mandatory": false,
+        "locales": {}
+      },
+      "date": {
+        "intent": "search.users",
+        "entity": "date",
+        "mandatory": false,
+        "locales": {}
+      }
+    }
+  }
+}
