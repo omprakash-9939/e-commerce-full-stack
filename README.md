@@ -14,7 +14,7 @@ This project covers **authentication, product management, cart, protected routes
 - Responsive UI
 - Backend REST API with Node.js & Express
 - MongoDB Database integration
-- AI Int 
+- AI Integration
 
 ---
 
