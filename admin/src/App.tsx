@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import AddProduct from "./pages/AddProduct";
 import ListProduct from "./pages/ListProduct";
 import Orders from "./pages/Orders";
@@ -12,8 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Cookies from "js-cookie";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-
-export const currency='$'
+export const currency = "$";
 
 export default function App() {
   const [token, setToken] = useState<string>(Cookies.get("admin-token") || "");
@@ -26,27 +25,26 @@ export default function App() {
   console.log("check token", token);
 
   useEffect(() => {
-  if (token) {
-    Cookies.set("admin-token", token, { expires: 7 });
+    if (token) {
+      Cookies.set("admin-token", token, { expires: 7 });
 
-    const savedAdmin = localStorage.getItem("admin");
-    if (savedAdmin) {
-      try {
-        setAdmin(JSON.parse(savedAdmin));
-      } catch (err) {
-        console.error("Failed to parse admin from localStorage", err);
-        localStorage.removeItem("admin");
-        setAdmin(null);
+      const savedAdmin = localStorage.getItem("admin");
+      if (savedAdmin) {
+        try {
+          setAdmin(JSON.parse(savedAdmin));
+        } catch (err) {
+          console.error("Failed to parse admin from localStorage", err);
+          localStorage.removeItem("admin");
+          setAdmin(null);
+        }
       }
+    } else {
+      // Remove admin token and admin info on logout
+      Cookies.remove("admin-token");
+      localStorage.removeItem("admin");
+      setAdmin(null);
     }
-  } else {
-    // Remove admin token and admin info on logout
-    Cookies.remove("admin-token");
-    localStorage.removeItem("admin");
-    setAdmin(null);
-  }
-}, [token]);
-
+  }, [token]);
 
   return (
     <div className="bg-gray-50">
@@ -55,9 +53,13 @@ export default function App() {
       <hr className="text-gray-200" />
 
       <div className="flex w-full">
-          {token && <Sidebar setToken={setToken} setAdmin={setAdmin} />}
+        {token && <Sidebar setToken={setToken} setAdmin={setAdmin} />}
         <div className="w-[70%] mx-auto ml-[max(5vw, 25px)] my-8 text-gray-600 text-base">
           <Routes>
+            <Route
+              path="/"
+              element={<Navigate to={token ? "/list" : "/login"} replace />}
+            />
             <Route
               path="/login"
               element={<Login setToken={setToken} setAdmin={setAdmin} />}
