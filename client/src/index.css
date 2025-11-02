@@ -1,0 +1,31 @@
+@import "tailwindcss";
+a.active hr{
+    display: block;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #1a1f36;
+}
+option:hover {
+  background: none;
+}
+.custom-select-dropdown .ant-select-item-option-active {
+  background-color: #9333ea !important;
+  color: white !important;
+  border-radius: none !important;
+}
+.custom-select.ant-select:hover .ant-select-selector {
+  border-color: #9333ea !important;
+}
+.custom-select.ant-select-focused .ant-select-selector {
+  border-color: #9333ea !important;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.2) !important;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+

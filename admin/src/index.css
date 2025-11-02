@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.active{
+  background-color: #8B008B;
+  border-color: #C586A5;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+select, input , textarea{
+  border: 1px solid #8B008B;
+  outline-color: #C586A5;
+  border-radius: 4px;
+}
+
+
+
+.loader {
+  --s: 12px;
+  width: var(--s);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(
+    from -90deg,
+    #12ae0a 0deg 135deg,
+    #0a9203 135deg 270deg,
+    #0a9203 270deg 360deg
+  );
+  filter: drop-shadow(0 0 0 #0a9203);
+  animation: l2 0.8s infinite linear;
+}
+
+@keyframes l2 {
+  50% {
+    filter: drop-shadow(0 0 5px #fff);
+  }
+}
